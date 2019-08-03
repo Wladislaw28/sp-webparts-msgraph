@@ -1,0 +1,28 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "web-part-ms-graph-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/webPartMsGraph/WebPartMsGraphWebPart.js",
+          "manifest": "./src/webparts/webPartMsGraph/WebPartMsGraphWebPart.manifest.json"
+        }
+      ]
+    },
+    "web-part-render-calender-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/webPartRenderCalender/WebPartRenderCalenderWebPart.js",
+          "manifest": "./src/webparts/webPartRenderCalender/WebPartRenderCalenderWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "WebPartMsGraphWebPartStrings": "lib/webparts/webPartMsGraph/loc/{locale}.js",
+    "WebPartRenderCalenderWebPartStrings": "lib/webparts/webPartRenderCalender/loc/{locale}.js",
+    "PropertyControlStrings": "node_modules/@pnp/spfx-property-controls/lib/loc/{locale}.js"
+  }
+}

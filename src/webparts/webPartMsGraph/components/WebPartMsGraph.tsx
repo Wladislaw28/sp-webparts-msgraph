@@ -87,7 +87,11 @@ export default class WebPartMsGraph extends React.Component<IWebPartMsGraphProps
                     console.error(err);
                     return;
                 }
-                const arrayEvents = response.value.reverse().slice(0, 3);
+
+                const dateNow = new Date().toISOString();
+                const arrayEvents: Event[] = response.value.filter(x => x.start.dateTime >= dateNow )
+                    .reverse().slice(0,3);
+
                 this.setState({
                     arrayEvents
                 });

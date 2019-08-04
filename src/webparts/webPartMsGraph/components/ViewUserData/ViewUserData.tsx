@@ -1,4 +1,7 @@
 import * as React from 'react';
+
+import * as strings from 'WebPartMsGraphWebPartStrings';
+
 import styles from '../WebPartMsGraph.module.scss';
 
 export interface ViewUserDataProps {
@@ -9,8 +12,8 @@ export interface ViewUserDataProps {
  const ViewUserData = ({name, email}: ViewUserDataProps) => {
     return(
         <div className={styles.column}>
-            <h1>UserName: {name}</h1>
-            <h2>Email: {email}</h2>
+            <h1>{strings.UserName}: {name}</h1>
+            <h2>{strings.Email}: {email}</h2>
         </div>
     );
  };

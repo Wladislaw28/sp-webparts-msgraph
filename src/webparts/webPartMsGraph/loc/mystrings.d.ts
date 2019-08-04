@@ -1,7 +1,8 @@
 declare interface IWebPartMsGraphWebPartStrings {
-  PropertyPaneDescription: string;
-  BasicGroupName: string;
-  DescriptionFieldLabel: string;
+  WelcomeTitle: string;
+    UserName: string;
+    Email: string;
+    PlaceholderChoiceCalendar: string;
 }
 
 declare module 'WebPartMsGraphWebPartStrings' {

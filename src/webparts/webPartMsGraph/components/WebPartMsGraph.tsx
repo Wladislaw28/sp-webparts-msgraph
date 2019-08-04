@@ -7,22 +7,26 @@ import ViewUserData from './ViewUserData/ViewUserData';
 import {Calendar} from "@microsoft/microsoft-graph-types";
 import { Dropdown, DropdownMenuItemType,
     IDropdownStyles, IDropdownOption } from 'office-ui-fabric-react/lib/Dropdown';
+import {Event} from "@microsoft/microsoft-graph-types";
 
+import * as strings from 'WebPartMsGraphWebPartStrings';
 
 export interface IWebPartMsGraphState {
     userName: string;
     userEmail: string;
     userCalendars: Calendar[];
     options: IDropdownOption[];
+    arrayEvents: Event[];
 }
 
 export default class WebPartMsGraph extends React.Component<IWebPartMsGraphProps, IWebPartMsGraphState> {
 
     public state = {
-      userName: '',
+        userName: '',
         userEmail: '',
         userCalendars: [],
-        options: []
+        options: [],
+        arrayEvents: []
     };
 
     public componentDidMount(): void {
@@ -75,29 +79,38 @@ export default class WebPartMsGraph extends React.Component<IWebPartMsGraphProps
        });
     }
 
-    private _onChange = (event: React.FormEvent<HTMLDivElement>, item: IDropdownOption): void => {
-        console.log(`Selection change: ${item.text} ${item.key}`);
-        // this.setState({ selectedItem: item });
+
+    private _getEventsInCalendar = (event: React.FormEvent<HTMLDivElement>, item: IDropdownOption): void => {
+        this.props.context.msGraphClientFactory.getClient().then((client: MSGraphClient): void => {
+            client.api(`/me/calendars/${item.key}/events?$select=subject,start,end,location`).get((err, response) => {
+                if (err) {
+                    console.error(err);
+                    return;
+                }
+                const arrayEvents = response.value.reverse().slice(0, 3);
+                this.setState({
+                    arrayEvents
+                });
+            });
+        });
     }
 
   public render(): React.ReactElement<IWebPartMsGraphProps> {
         const {userName, userEmail, options} = this.state;
 
       const dropdownStyles: Partial<IDropdownStyles> = {
-          dropdown: { width: 600 },
-          label: {marginTop: 170}
-      };
+          dropdown: { width: 600, marginTop: 190 }};
 
     return (
       <div className={ styles.webPartMsGraph }>
         <div className={ styles.container }>
           <div className={ styles.row }>
             <div className={ styles.column }>
-              <span className={ styles.title }>Welcome to task 4 in SharePoint!</span>
+              <span className={ styles.title }>{strings.WelcomeTitle}</span>
                 <ViewUserData name={userName} email={userEmail} /> <br/>
                 <div>
-                    <Dropdown placeholder="Choice the calendar" label="List of calendars" defaultSelectedKey=""
-                              options={options} styles={dropdownStyles} onChange={this._onChange} />
+                    <Dropdown placeholder={strings.PlaceholderChoiceCalendar} defaultSelectedKey=""
+                              options={options} styles={dropdownStyles} onChange={this._getEventsInCalendar} />
                 </div>
             </div>
           </div>

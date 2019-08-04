@@ -1,7 +1,8 @@
 define([], function() {
   return {
-    "PropertyPaneDescription": "Description",
-    "BasicGroupName": "Group Name",
-    "DescriptionFieldLabel": "Description Field"
+	  "WelcomeTitle": "Welcome to task 4 in SharePoint!",
+	  "UserName" :"UserName",
+	  "Email": "Email",
+	  "PlaceholderChoiceCalendar": "Choice the calendar"
   }
 });

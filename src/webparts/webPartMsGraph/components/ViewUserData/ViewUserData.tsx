@@ -12,8 +12,8 @@ export interface ViewUserDataProps {
  const ViewUserData = ({name, email}: ViewUserDataProps) => {
     return(
         <div className={styles.column}>
-            <h1>{strings.UserName}: {name}</h1>
-            <h2>{strings.Email}: {email}</h2>
+            <h1 className={styles.username}>{strings.UserName}: {name}</h1>
+            <h2 className={styles.useremail}>{strings.Email}: {email}</h2>
         </div>
     );
  };

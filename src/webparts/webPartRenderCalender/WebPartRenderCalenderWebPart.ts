@@ -4,7 +4,7 @@ import { Version } from '@microsoft/sp-core-library';
 import { BaseClientSideWebPart } from '@microsoft/sp-webpart-base';
 import {
   IPropertyPaneConfiguration,
-  PropertyPaneTextField
+  PropertyPaneTextField, PropertyPaneToggle
 } from '@microsoft/sp-property-pane';
 
 import * as strings from 'WebPartRenderCalenderWebPartStrings';
@@ -12,7 +12,8 @@ import WebPartRenderCalender from './components/WebPartRenderCalender';
 import { IWebPartRenderCalenderProps } from './components/IWebPartRenderCalenderProps';
 
 export interface IWebPartRenderCalenderWebPartProps {
-  description: string;
+    idCalendar: string;
+    connectToggle: boolean;
 }
 
 export default class WebPartRenderCalenderWebPart extends BaseClientSideWebPart<IWebPartRenderCalenderWebPartProps> {
@@ -21,7 +22,8 @@ export default class WebPartRenderCalenderWebPart extends BaseClientSideWebPart<
     const element: React.ReactElement<IWebPartRenderCalenderProps > = React.createElement(
       WebPartRenderCalender,
       {
-        description: this.properties.description
+          idCalendar: this.properties.idCalendar,
+          connectToggle: this.properties.connectToggle
       }
     );
 
@@ -47,9 +49,12 @@ export default class WebPartRenderCalenderWebPart extends BaseClientSideWebPart<
             {
               groupName: strings.BasicGroupName,
               groupFields: [
-                PropertyPaneTextField('description', {
-                  label: strings.DescriptionFieldLabel
-                })
+                PropertyPaneTextField('idCalendar', {
+                  label: strings.IdCalendarFieldLabel
+                }),
+                  PropertyPaneToggle('connectToggle', {
+                      label: strings.ToggleConnect
+                  })
               ]
             }
           ]

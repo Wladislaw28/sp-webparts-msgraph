@@ -1,3 +1,4 @@
 export interface IWebPartRenderCalenderProps {
-  description: string;
+    idCalendar: string;
+    connectToggle: boolean;
 }

@@ -1,7 +1,8 @@
 declare interface IWebPartRenderCalenderWebPartStrings {
   PropertyPaneDescription: string;
   BasicGroupName: string;
-  DescriptionFieldLabel: string;
+  IdCalendarFieldLabel: string;
+  ToggleConnect: string;
 }
 
 declare module 'WebPartRenderCalenderWebPartStrings' {

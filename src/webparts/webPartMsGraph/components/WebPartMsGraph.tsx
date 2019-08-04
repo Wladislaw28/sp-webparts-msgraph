@@ -1,15 +1,16 @@
 import * as React from 'react';
-import styles from './WebPartMsGraph.module.scss';
 import { IWebPartMsGraphProps } from './IWebPartMsGraphProps';
 import { MSGraphClient } from '@microsoft/sp-http';
 import * as MicrosoftGraph from '@microsoft/microsoft-graph-types';
 import ViewUserData from './ViewUserData/ViewUserData';
 import {Calendar} from "@microsoft/microsoft-graph-types";
-import { Dropdown, DropdownMenuItemType,
+import { Dropdown,
     IDropdownStyles, IDropdownOption } from 'office-ui-fabric-react/lib/Dropdown';
 import {Event} from "@microsoft/microsoft-graph-types";
 
 import * as strings from 'WebPartMsGraphWebPartStrings';
+
+import styles from './WebPartMsGraph.module.scss';
 
 export interface IWebPartMsGraphState {
     userName: string;
@@ -103,7 +104,7 @@ export default class WebPartMsGraph extends React.Component<IWebPartMsGraphProps
         const {userName, userEmail, options} = this.state;
 
       const dropdownStyles: Partial<IDropdownStyles> = {
-          dropdown: { width: 600, marginTop: 190 }};
+          dropdown: { margin: 0 ,minWidth: 150, marginTop: 150 }};
 
     return (
       <div className={ styles.webPartMsGraph }>

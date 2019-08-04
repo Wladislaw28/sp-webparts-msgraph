@@ -1,7 +1,8 @@
 define([], function() {
   return {
-    "PropertyPaneDescription": "Description",
-    "BasicGroupName": "Group Name",
-    "DescriptionFieldLabel": "Description Field"
+    "PropertyPaneDescription": "Settings by Web Part",
+    "BasicGroupName": "",
+    "IdCalendarFieldLabel": "Input Id Calendar",
+	  "ToggleConnect": "Connect"
   }
 });

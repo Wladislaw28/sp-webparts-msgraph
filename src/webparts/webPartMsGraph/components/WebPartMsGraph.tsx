@@ -3,11 +3,10 @@ import { IWebPartMsGraphProps } from './IWebPartMsGraphProps';
 import { MSGraphClient } from '@microsoft/sp-http';
 import * as MicrosoftGraph from '@microsoft/microsoft-graph-types';
 import ViewUserData from './ViewUserData/ViewUserData';
-import {Calendar} from "@microsoft/microsoft-graph-types";
+import {Calendar, Event} from "@microsoft/microsoft-graph-types";
 import { Dropdown,
     IDropdownStyles, IDropdownOption } from 'office-ui-fabric-react/lib/Dropdown';
-import {Event} from "@microsoft/microsoft-graph-types";
-
+import ViewEvents from './ViewEvents/ViewEvents';
 import * as strings from 'WebPartMsGraphWebPartStrings';
 
 import styles from './WebPartMsGraph.module.scss';
@@ -101,7 +100,7 @@ export default class WebPartMsGraph extends React.Component<IWebPartMsGraphProps
     }
 
   public render(): React.ReactElement<IWebPartMsGraphProps> {
-        const {userName, userEmail, options} = this.state;
+        const {userName, userEmail, options, arrayEvents} = this.state;
 
       const dropdownStyles: Partial<IDropdownStyles> = {
           dropdown: { margin: 0 ,minWidth: 150, marginTop: 150 }};
@@ -116,6 +115,7 @@ export default class WebPartMsGraph extends React.Component<IWebPartMsGraphProps
                 <div>
                     <Dropdown placeholder={strings.PlaceholderChoiceCalendar} defaultSelectedKey=""
                               options={options} styles={dropdownStyles} onChange={this._getEventsInCalendar} />
+                    {arrayEvents.length > 0 ? <ViewEvents arrayEvents={arrayEvents} /> : null}
                 </div>
             </div>
           </div>

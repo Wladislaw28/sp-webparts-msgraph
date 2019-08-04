@@ -1,0 +1,56 @@
+@import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Exo&display=swap');
+
+.eventsList {
+  .container{
+    box-sizing: border-box;
+    display: block;
+    margin: 0 auto;
+    width: 1000px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+  }
+
+  .eventData{
+    width: 180px;
+    height: 180px;
+    display: inline-block;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    margin-right: 10px;
+    background-color: white;
+  }
+
+  .dateDiv{
+    float: left;
+    margin-bottom: 15px;
+  }
+
+  .date{
+    color: black;
+    font-size: 28px;
+    margin-left: 5px;
+    margin-top: 17px;
+    //font-family: 'Agency FB',sans-serif;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .dataLocSubj{
+    float: right;
+    margin-top: 8px;
+  }
+
+  .location{
+
+    color: black;
+
+  }
+  .subject{
+
+    color: black;
+
+  }
+}

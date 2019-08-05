@@ -1,4 +1,4 @@
-@import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
+@import '../../../../../node_modules/@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore';
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Exo&display=swap');
 
@@ -7,50 +7,48 @@
     box-sizing: border-box;
     display: block;
     margin: 0 auto;
-    width: 1000px;
+    min-width: 1000px;
+    max-width: 1100px;
     margin-top: 20px;
     margin-bottom: 20px;
-
   }
 
   .eventData{
-    width: 180px;
-    height: 180px;
+    width: 160px;
+    height: 120px;
     display: inline-block;
-    border-radius: 10px;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
+    margin: 0 auto;
     margin-right: 10px;
-    background-color: white;
+    background-color: #f0d070;
   }
 
   .dateDiv{
-    float: left;
-    margin-bottom: 15px;
+   margin: 0 auto;
   }
 
   .date{
     color: black;
-    font-size: 28px;
+    font-size: 14px;
     margin-left: 5px;
-    margin-top: 17px;
     //font-family: 'Agency FB',sans-serif;
     font-family: 'Montserrat', sans-serif;
   }
 
   .dataLocSubj{
-    float: right;
-    margin-top: 8px;
+    margin: 0 auto;
+    margin-left: 8px;
   }
 
   .location{
-
+    font-size: 13px;
     color: black;
-
+    font-family: 'Tahoma',sans-serif;
+    font-weight: lighter;
   }
   .subject{
-
+    font-size: 18px;
     color: black;
-
+    font-family: 'Tahoma',sans-serif;
+    font-weight: bold;
   }
 }

@@ -10,6 +10,7 @@ import {
 import * as strings from 'WebPartRenderCalenderWebPartStrings';
 import WebPartRenderCalender from './components/WebPartRenderCalender';
 import { IWebPartRenderCalenderProps } from './components/IWebPartRenderCalenderProps';
+import Store from '../pattern/Store';
 
 export interface IWebPartRenderCalenderWebPartProps {
     idCalendar: string;
@@ -18,12 +19,22 @@ export interface IWebPartRenderCalenderWebPartProps {
 
 export default class WebPartRenderCalenderWebPart extends BaseClientSideWebPart<IWebPartRenderCalenderWebPartProps> {
 
+    public onPropertyPaneFieldChanged(propertyPath: string, oldValue: any, newValue: any): void {
+        if (propertyPath === 'connectToggle') {
+            console.log("connect");
+            Store.subscribe(text => {
+               console.log('broadcast',text);
+            });
+        }
+    }
+
   public render(): void {
     const element: React.ReactElement<IWebPartRenderCalenderProps > = React.createElement(
       WebPartRenderCalender,
       {
           idCalendar: this.properties.idCalendar,
-          connectToggle: this.properties.connectToggle
+          connectToggle: this.properties.connectToggle,
+          context: this.context
       }
     );
 
@@ -53,7 +64,8 @@ export default class WebPartRenderCalenderWebPart extends BaseClientSideWebPart<
                   label: strings.IdCalendarFieldLabel
                 }),
                   PropertyPaneToggle('connectToggle', {
-                      label: strings.ToggleConnect
+                      label: strings.ToggleConnect,
+                      checked: this.onPropertyPaneFieldChanged.bind(this),
                   })
               ]
             }

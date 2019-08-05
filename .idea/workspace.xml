@@ -2,10 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f0222cfb-40c0-4f11-8edb-472c3509cb96" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/webparts/webPartMsGraph/components/ViewEvents/ViewEvents.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webparts/webPartMsGraph/components/ViewEvents/ViewEvents.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webparts/pattern/Observer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webparts/pattern/State.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webparts/pattern/Store.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webparts/webPartMsGraph/WebPartMsGraphWebPart.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/webparts/webPartMsGraph/WebPartMsGraphWebPart.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webparts/webPartMsGraph/components/ViewEvents/ViewEvents.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/webparts/webPartRenderCalender/components/ViewEvents/ViewEvents.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webparts/webPartMsGraph/components/ViewEvents/ViewEvents.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/webparts/webPartRenderCalender/components/ViewEvents/ViewEvents.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webparts/webPartMsGraph/components/WebPartMsGraph.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/webparts/webPartMsGraph/components/WebPartMsGraph.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/webparts/webPartMsGraph/components/WebPartMsGraph.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/webparts/webPartMsGraph/components/WebPartMsGraph.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webparts/webPartRenderCalender/WebPartRenderCalenderWebPart.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/webparts/webPartRenderCalender/WebPartRenderCalenderWebPart.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webparts/webPartRenderCalender/components/IWebPartRenderCalenderProps.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/webparts/webPartRenderCalender/components/IWebPartRenderCalenderProps.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webparts/webPartRenderCalender/components/WebPartRenderCalender.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/webparts/webPartRenderCalender/components/WebPartRenderCalender.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webparts/webPartRenderCalender/components/WebPartRenderCalender.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/webparts/webPartRenderCalender/components/WebPartRenderCalender.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webparts/webPartRenderCalender/loc/en-us.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/webparts/webPartRenderCalender/loc/en-us.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webparts/webPartRenderCalender/loc/mystrings.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/webparts/webPartRenderCalender/loc/mystrings.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webparts/webPartRenderCalender/loc/ru-ru.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/webparts/webPartRenderCalender/loc/ru-ru.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -26,20 +39,20 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="js" value="4" />
+          <entry key="js" value="11" />
           <entry key="json" value="4" />
-          <entry key="scss" value="6" />
-          <entry key="ts" value="37" />
-          <entry key="tsx" value="6" />
+          <entry key="scss" value="8" />
+          <entry key="ts" value="47" />
+          <entry key="tsx" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JSON" value="4" />
-          <entry key="JavaScript" value="4" />
-          <entry key="SCSS" value="6" />
-          <entry key="TypeScript" value="37" />
-          <entry key="TypeScript JSX" value="6" />
+          <entry key="JavaScript" value="11" />
+          <entry key="SCSS" value="8" />
+          <entry key="TypeScript" value="47" />
+          <entry key="TypeScript JSX" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
@@ -50,31 +63,31 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="206" />
+          <entry key="js" value="419" />
           <entry key="json" value="6" />
-          <entry key="scss" value="378" />
-          <entry key="ts" value="198" />
-          <entry key="tsx" value="1731" />
+          <entry key="scss" value="498" />
+          <entry key="ts" value="408" />
+          <entry key="tsx" value="2451" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="6" />
-          <entry key="JavaScript" value="206" />
-          <entry key="SCSS" value="378" />
-          <entry key="TypeScript" value="198" />
-          <entry key="TypeScript JSX" value="1731" />
+          <entry key="JavaScript" value="419" />
+          <entry key="SCSS" value="498" />
+          <entry key="TypeScript" value="408" />
+          <entry key="TypeScript JSX" value="2451" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/webparts/webPartMsGraph/WebPartMsGraphWebPart.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="391">
+              <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -82,44 +95,50 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/webparts/webPartMsGraph/components/WebPartMsGraph.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="106" lean-forward="true" selection-start-line="106" selection-end-line="106" />
+            <state relative-caret-position="207">
+              <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/webparts/pattern/State.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="479">
+              <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/webparts/pattern/Store.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="414">
+              <caret line="45" column="18" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/webparts/webPartRenderCalender/WebPartRenderCalenderWebPart.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/webparts/webPartRenderCalender/components/WebPartRenderCalender.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="479">
+              <caret line="62" column="14" selection-start-line="62" selection-start-column="12" selection-end-line="62" selection-end-column="15" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/webparts/webPartMsGraph/components/ViewEvents/ViewEvents.tsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="621">
-              <caret line="27" column="14" lean-forward="true" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
-              <folding>
-                <element signature="e#0#31#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/webparts/webPartMsGraph/components/ViewEvents/ViewEvents.module.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="37" column="42" lean-forward="true" selection-start-line="37" selection-start-column="42" selection-end-line="37" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/webparts/webPartMsGraph/components/WebPartMsGraph.module.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="72" column="20" lean-forward="true" selection-start-line="72" selection-start-column="20" selection-end-line="72" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -139,22 +158,33 @@
       <list>
         <option value="$PROJECT_DIR$/config/package-solution.json" />
         <option value="$PROJECT_DIR$/src/webparts/webPartMsGraph/components/IWebPartMsGraphProps.ts" />
-        <option value="$PROJECT_DIR$/src/webparts/webPartMsGraph/WebPartMsGraphWebPart.ts" />
         <option value="$PROJECT_DIR$/src/webparts/webPartMsGraph/loc/mystrings.d.ts" />
         <option value="$PROJECT_DIR$/src/webparts/webPartMsGraph/loc/en-us.js" />
         <option value="$PROJECT_DIR$/src/webparts/webPartMsGraph/loc/ru-ru.js" />
         <option value="$PROJECT_DIR$/src/webparts/webPartMsGraph/components/ViewUserData/ViewUserData.tsx" />
-        <option value="$PROJECT_DIR$/src/webparts/webPartRenderCalender/loc/mystrings.d.ts" />
-        <option value="$PROJECT_DIR$/src/webparts/webPartRenderCalender/components/IWebPartRenderCalenderProps.ts" />
-        <option value="$PROJECT_DIR$/src/webparts/webPartRenderCalender/components/WebPartRenderCalender.tsx" />
-        <option value="$PROJECT_DIR$/src/webparts/webPartRenderCalender/loc/en-us.js" />
-        <option value="$PROJECT_DIR$/src/webparts/webPartRenderCalender/loc/ru-ru.js" />
-        <option value="$PROJECT_DIR$/src/webparts/webPartRenderCalender/WebPartRenderCalenderWebPart.ts" />
-        <option value="$PROJECT_DIR$/src/webparts/webPartMsGraph/components/WebPartMsGraph.module.scss" />
-        <option value="$PROJECT_DIR$/src/webparts/webPartRenderCalender/components/WebPartRenderCalender.module.scss" />
-        <option value="$PROJECT_DIR$/src/webparts/webPartMsGraph/components/WebPartMsGraph.tsx" />
         <option value="$PROJECT_DIR$/src/webparts/webPartMsGraph/components/ViewEvents/ViewEvents.module.scss" />
         <option value="$PROJECT_DIR$/src/webparts/webPartMsGraph/components/ViewEvents/ViewEvents.tsx" />
+        <option value="$PROJECT_DIR$/src/webparts/pattern/Observer.tsx" />
+        <option value="$PROJECT_DIR$/src/webparts/pattern/Subject.tsx" />
+        <option value="$PROJECT_DIR$/src/webparts/pattern/State.tsx" />
+        <option value="$PROJECT_DIR$/src/webparts/pattern/State.ts" />
+        <option value="$PROJECT_DIR$/src/webparts/webPartRenderCalender/components/IWebPartRenderCalenderProps.ts" />
+        <option value="$PROJECT_DIR$/src/webparts/webPartRenderCalender/loc/mystrings.d.ts" />
+        <option value="$PROJECT_DIR$/src/webparts/webPartRenderCalender/loc/en-us.js" />
+        <option value="$PROJECT_DIR$/src/webparts/webPartRenderCalender/loc/ru-ru.js" />
+        <option value="$PROJECT_DIR$/src/webparts/webPartRenderCalender/components/WebPartRenderCalender.tsx" />
+        <option value="$PROJECT_DIR$/src/webparts/webPartRenderCalender/components/WebPartRenderCalender.module.scss" />
+        <option value="$PROJECT_DIR$/src/webparts/webPartMsGraph/components/WebPartMsGraph.module.scss" />
+        <option value="$PROJECT_DIR$/src/webparts/webPartRenderCalender/components/ViewEvents/ViewEvents.module.scss" />
+        <option value="$PROJECT_DIR$/src/webparts/pattern/Subject.ts" />
+        <option value="$PROJECT_DIR$/src/webparts/pattern/Observer.js" />
+        <option value="$PROJECT_DIR$/src/webparts/webPartMsGraph/WebPartMsGraphWebPart.ts" />
+        <option value="$PROJECT_DIR$/src/webparts/pattern/State.js" />
+        <option value="$PROJECT_DIR$/src/webparts/pattern/Subject.js" />
+        <option value="$PROJECT_DIR$/src/webparts/pattern/store.js" />
+        <option value="$PROJECT_DIR$/src/webparts/pattern/Store.js" />
+        <option value="$PROJECT_DIR$/src/webparts/webPartMsGraph/components/WebPartMsGraph.tsx" />
+        <option value="$PROJECT_DIR$/src/webparts/webPartRenderCalender/WebPartRenderCalenderWebPart.ts" />
       </list>
     </option>
   </component>
@@ -214,24 +244,7 @@
               <item name="task4_wmreply_webparts" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="webparts" type="462c0819:PsiDirectoryNode" />
-              <item name="webPartMsGraph" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="task4_wmreply_webparts" type="b2602c69:ProjectViewProjectNode" />
-              <item name="task4_wmreply_webparts" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="webparts" type="462c0819:PsiDirectoryNode" />
-              <item name="webPartMsGraph" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="task4_wmreply_webparts" type="b2602c69:ProjectViewProjectNode" />
-              <item name="task4_wmreply_webparts" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="webparts" type="462c0819:PsiDirectoryNode" />
-              <item name="webPartMsGraph" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="ViewEvents" type="462c0819:PsiDirectoryNode" />
+              <item name="pattern" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="task4_wmreply_webparts" type="b2602c69:ProjectViewProjectNode" />
@@ -262,9 +275,13 @@
     <property name="node.js.selected.package.tslint" value="D:\Proga\task4_wmreply_webparts\node_modules\tslint" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2018.2.4\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Proga\task4_wmreply_webparts\src\webparts\webPartRenderCalender\components" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Proga\task4_wmreply_webparts\src\webparts\webPartRenderCalender\loc" />
     </key>
@@ -291,12 +308,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1564781564586</updated>
-      <workItem from="1564781568380" duration="37712000" />
+      <workItem from="1564781568380" duration="56238000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37712000" />
+    <option name="totallyTimeSpent" value="56238000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -305,7 +322,7 @@
       <window_info id="npm" side_tool="true" />
       <window_info id="Gulp" side_tool="true" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24983476" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24983476" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="TypeScript" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
@@ -313,8 +330,8 @@
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3286119" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -376,13 +393,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="5185" column="10" selection-start-line="5185" selection-start-column="10" selection-end-line="5185" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/@types/react/global.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
@@ -414,13 +424,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/webparts/webPartMsGraph/components/IWebPartMsGraphProps.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/webparts/webPartMsGraph/loc/ru-ru.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
@@ -441,13 +444,6 @@
     <entry file="file://$PROJECT_DIR$/config/config.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/webparts/webPartRenderCalender/components/IWebPartRenderCalenderProps.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/@microsoft/sp-property-pane/dist/index-internal.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -462,62 +458,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/webparts/webPartRenderCalender/loc/ru-ru.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="29" lean-forward="true" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/webparts/webPartRenderCalender/loc/en-us.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="54" lean-forward="true" selection-start-line="2" selection-start-column="54" selection-end-line="2" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/webparts/webPartRenderCalender/loc/mystrings.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/webparts/webPartRenderCalender/components/WebPartRenderCalender.module.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="21" lean-forward="true" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/webparts/webPartMsGraph/loc/mystrings.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/@microsoft/microsoft-graph-types/microsoft-graph.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-270">
           <caret line="1314" column="17" selection-start-line="1314" selection-start-column="17" selection-end-line="1314" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/webparts/webPartRenderCalender/components/WebPartRenderCalender.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="54" lean-forward="true" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/webparts/webPartRenderCalender/WebPartRenderCalenderWebPart.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="29" lean-forward="true" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -528,54 +472,169 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/webparts/webPartMsGraph/components/ViewEvents/ViewEvents.module.scss.ts">
+    <entry file="file://$PROJECT_DIR$/src/webparts/webPartRenderCalender/components/ViewEvents/ViewEvents.module.scss.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
           <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/webparts/webPartMsGraph/components/ViewEvents/ViewEvents.module.scss">
+    <entry file="file://$PROJECT_DIR$/src/webparts/pattern/Observer.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="37" column="42" lean-forward="true" selection-start-line="37" selection-start-column="42" selection-end-line="37" selection-end-column="42" />
+        <state relative-caret-position="115">
+          <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/webparts/pattern/State.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/webparts/webPartMsGraph/components/IWebPartMsGraphProps.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/webparts/webPartRenderCalender/loc/ru-ru.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/webparts/webPartRenderCalender/loc/en-us.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="33" lean-forward="true" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/webparts/webPartMsGraph/loc/mystrings.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/webparts/webPartRenderCalender/loc/mystrings.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="50" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/webparts/webPartMsGraph/components/WebPartMsGraph.module.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="72" column="20" lean-forward="true" selection-start-line="72" selection-start-column="20" selection-end-line="72" selection-end-column="20" />
+        <state relative-caret-position="23">
+          <caret line="15" column="133" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="134" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/webparts/webPartMsGraph/components/ViewEvents/ViewEvents.tsx">
+    <entry file="file://$PROJECT_DIR$/src/webparts/webPartRenderCalender/components/ViewEvents/ViewEvents.module.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="27" column="14" lean-forward="true" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
+        <state relative-caret-position="249">
+          <caret line="39" column="3" lean-forward="true" selection-start-line="39" selection-start-column="3" selection-end-line="39" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/webparts/webPartRenderCalender/components/ViewEvents/ViewEvents.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="9" column="11" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/webparts/webPartMsGraph/components/WebPartMsGraph.tsx">
+    <entry file="file://$PROJECT_DIR$/src/webparts/webPartRenderCalender/components/WebPartRenderCalender.module.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="106" lean-forward="true" selection-start-line="106" selection-end-line="106" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="92">
+          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/webparts/webPartRenderCalender/components/IWebPartRenderCalenderProps.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="28" lean-forward="true" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/webparts/pattern/Subject.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-142">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/webparts/webPartMsGraph/WebPartMsGraphWebPart.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="391">
+          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/webparts/pattern/Observer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4686">
+          <caret line="16001" column="10" selection-start-line="16001" selection-start-column="10" selection-end-line="16001" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/webparts/webPartRenderCalender/components/WebPartRenderCalender.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="479">
+          <caret line="62" column="14" selection-start-line="62" selection-start-column="12" selection-end-line="62" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/webparts/pattern/Store.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="45" column="18" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/webparts/webPartRenderCalender/WebPartRenderCalenderWebPart.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/webparts/pattern/State.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="479">
+          <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/webparts/webPartMsGraph/components/WebPartMsGraph.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
         </state>
       </provider>
     </entry>

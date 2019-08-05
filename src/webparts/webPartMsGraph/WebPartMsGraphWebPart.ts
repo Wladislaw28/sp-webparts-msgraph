@@ -5,10 +5,7 @@ import { BaseClientSideWebPart } from '@microsoft/sp-webpart-base';
 import WebPartMsGraph from './components/WebPartMsGraph';
 import { IWebPartMsGraphProps } from './components/IWebPartMsGraphProps';
 
-
-
 export interface IWebPartMsGraphWebPartProps {
-  description: string;
 }
 
 export default class WebPartMsGraphWebPart extends BaseClientSideWebPart<IWebPartMsGraphWebPartProps> {

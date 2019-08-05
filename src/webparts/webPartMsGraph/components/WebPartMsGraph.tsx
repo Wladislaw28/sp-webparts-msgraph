@@ -6,9 +6,8 @@ import ViewUserData from './ViewUserData/ViewUserData';
 import {Calendar, Event} from "@microsoft/microsoft-graph-types";
 import { Dropdown,
     IDropdownStyles, IDropdownOption } from 'office-ui-fabric-react/lib/Dropdown';
-import ViewEvents from './ViewEvents/ViewEvents';
 import * as strings from 'WebPartMsGraphWebPartStrings';
-
+import Store from '../../pattern/Store';
 import styles from './WebPartMsGraph.module.scss';
 
 export interface IWebPartMsGraphState {
@@ -61,6 +60,7 @@ export default class WebPartMsGraph extends React.Component<IWebPartMsGraphProps
                     userCalendars: response.value,
                 },() => {
                     this._createOptions(this.state.userCalendars);
+                    console.log(this.state.userCalendars);
                 });
             });
         });
@@ -94,6 +94,8 @@ export default class WebPartMsGraph extends React.Component<IWebPartMsGraphProps
 
                 this.setState({
                     arrayEvents
+                }, () => {
+                    Store.broadcast("123");
                 });
             });
         });
@@ -115,7 +117,6 @@ export default class WebPartMsGraph extends React.Component<IWebPartMsGraphProps
                 <div>
                     <Dropdown placeholder={strings.PlaceholderChoiceCalendar} defaultSelectedKey=""
                               options={options} styles={dropdownStyles} onChange={this._getEventsInCalendar} />
-                    {arrayEvents.length > 0 ? <ViewEvents arrayEvents={arrayEvents} /> : null}
                 </div>
             </div>
           </div>

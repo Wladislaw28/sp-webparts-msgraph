@@ -16,6 +16,11 @@ class Store {
             this.observers.forEach(subscriber => subscriber(data));
         }
 	}
+
+	public unsubscribe (fn) {
+	    this.observers = this.observers.filter( subscriber => subscriber == fn );
+	    console.log(this.observers);
+    }
 }
 if (window["store"] === undefined) {
 	window["store"] = new Store();

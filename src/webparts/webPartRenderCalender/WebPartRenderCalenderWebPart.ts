@@ -10,7 +10,7 @@ import {
 import * as strings from 'WebPartRenderCalenderWebPartStrings';
 import WebPartRenderCalender from './components/WebPartRenderCalender';
 import { IWebPartRenderCalenderProps } from './components/IWebPartRenderCalenderProps';
-import Store from '../pattern/Store';
+
 import {Event} from "@microsoft/microsoft-graph-types";
 
 
@@ -23,17 +23,17 @@ export interface IWebPartRenderCalenderWebPartProps {
 export default class WebPartRenderCalenderWebPart extends BaseClientSideWebPart<IWebPartRenderCalenderWebPartProps> {
 
     private dataEvents: Event[] = [];
-
-    public onPropertyPaneFieldChanged(propertyPath: string, oldValue: any, newValue: any): void {
-        if (propertyPath === 'connectToggle') {
-            if (newValue === false){
-                Store.subscribe(dataEvent => {
-                    this.dataEvents = dataEvent;
-                    this.render();
-                });
-            }
-        }
-    }
+    //
+    // public onPropertyPaneFieldChanged(propertyPath: string, oldValue: any, newValue: any): void {
+    //     if (propertyPath === 'connectToggle') {
+    //         if (newValue === false){
+    //             Store.subscribe(dataEvent => {
+    //                 this.dataEvents = dataEvent;
+    //                 this.render();
+    //             });
+    //         }
+    //     }
+    // }
 
   public render(): void {
     const element: React.ReactElement<IWebPartRenderCalenderProps > = React.createElement(
@@ -73,7 +73,7 @@ export default class WebPartRenderCalenderWebPart extends BaseClientSideWebPart<
                 }),
                   PropertyPaneToggle('connectToggle', {
                       label: strings.ToggleConnect,
-                      checked: this.onPropertyPaneFieldChanged.bind(this),
+                      checked: this.properties.connectToggle,
                       onText: 'On',
                       offText: 'Off'
                   })

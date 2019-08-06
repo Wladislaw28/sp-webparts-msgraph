@@ -60,7 +60,6 @@ export default class WebPartMsGraph extends React.Component<IWebPartMsGraphProps
                     userCalendars: response.value,
                 },() => {
                     this._createOptions(this.state.userCalendars);
-                    console.log(this.state.userCalendars);
                 });
             });
         });
@@ -87,7 +86,6 @@ export default class WebPartMsGraph extends React.Component<IWebPartMsGraphProps
                     console.error(err);
                     return;
                 }
-
                 const dateNow = new Date().toISOString();
                 const arrayEvents: Event[] = response.value.filter(x => x.start.dateTime >= dateNow )
                     .reverse().slice(0,3);

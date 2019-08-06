@@ -5,7 +5,6 @@ import { MSGraphClient } from '@microsoft/sp-http';
 import * as MicrosoftGraph from '@microsoft/microsoft-graph-types';
 import ViewEvents from './ViewEvents/ViewEvents';
 import * as strings from 'WebPartRenderCalenderWebPartStrings';
-import Store from '../../pattern/Store';
 import styles from './WebPartRenderCalender.module.scss';
 
 export interface WebPartRenderCalenderState {
@@ -27,19 +26,16 @@ export default class WebPartRenderCalender extends React.Component<IWebPartRende
    }
 
    private _checkConnect(): void {
-       if (this.props.connectToggle === true || this.props.connectToggle === undefined && this.props.idCalendar !== '') {
+       if (this.props.connectToggle === true && this.props.idCalendar !== '') {
            this._getEvents(this.props.idCalendar);
        } else if (this.props.connectToggle === false) {
-           Store.subscribe(dataEvent => {
-               this.setState({
-                   eventsData: dataEvent,
-               },() => {
-                   this.render();
-                   Store.unsubscribe(dataEvent);
-               });
+           this.setState({
+               eventsData: this.props.dataEventsFromOtherWP,
+           },() => {
+               this.render();
            });
        } else {
-           console.log('no active');
+           return;
        }
    }
 

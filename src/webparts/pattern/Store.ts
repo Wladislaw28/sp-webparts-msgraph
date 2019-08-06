@@ -19,7 +19,6 @@ class Store {
 
 	public unsubscribe (fn) {
 	    this.observers = this.observers.filter( subscriber => subscriber == fn );
-	    console.log(this.observers);
     }
 }
 if (window["store"] === undefined) {

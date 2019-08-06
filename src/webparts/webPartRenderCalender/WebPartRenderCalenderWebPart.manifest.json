@@ -19,7 +19,7 @@
     "group": { "default": "Other" },
     "title": { "default": "WebPartRenderCalender" },
     "description": { "default": "WebPartRenderCalender description" },
-    "officeFabricIconFontName": "Page",
+    "iconImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Circle-icons-calendar.svg/768px-Circle-icons-calendar.svg.png",
     "properties": {
       "description": "WebPartRenderCalender"
     }

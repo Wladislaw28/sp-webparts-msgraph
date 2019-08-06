@@ -19,7 +19,7 @@
     "group": { "default": "Other" },
     "title": { "default": "WebPartMsGraph" },
     "description": { "default": "WebPartMsGraph description" },
-    "officeFabricIconFontName": "Page",
+    "iconImageUrl": "https://tickera-wpsalad.netdna-ssl.com/wp-content/themes/tickera/style/img/freebies/icons/events/6.png",
     "properties": {
       "description": "WebPartMsGraph"
     }

@@ -11,20 +11,27 @@ import * as strings from 'WebPartRenderCalenderWebPartStrings';
 import WebPartRenderCalender from './components/WebPartRenderCalender';
 import { IWebPartRenderCalenderProps } from './components/IWebPartRenderCalenderProps';
 import Store from '../pattern/Store';
+import {Event} from "@microsoft/microsoft-graph-types";
+
 
 export interface IWebPartRenderCalenderWebPartProps {
     idCalendar: string;
     connectToggle: boolean;
+    dataEventsFromOtherWP: Event[];
 }
 
 export default class WebPartRenderCalenderWebPart extends BaseClientSideWebPart<IWebPartRenderCalenderWebPartProps> {
 
+    private dataEvents: Event[] = [];
+
     public onPropertyPaneFieldChanged(propertyPath: string, oldValue: any, newValue: any): void {
         if (propertyPath === 'connectToggle') {
-            console.log("connect");
-            Store.subscribe(text => {
-               console.log('broadcast',text);
-            });
+            if (newValue === false){
+                Store.subscribe(dataEvent => {
+                    this.dataEvents = dataEvent;
+                    this.render();
+                });
+            }
         }
     }
 
@@ -34,6 +41,7 @@ export default class WebPartRenderCalenderWebPart extends BaseClientSideWebPart<
       {
           idCalendar: this.properties.idCalendar,
           connectToggle: this.properties.connectToggle,
+          dataEventsFromOtherWP: this.dataEvents,
           context: this.context
       }
     );
@@ -66,6 +74,8 @@ export default class WebPartRenderCalenderWebPart extends BaseClientSideWebPart<
                   PropertyPaneToggle('connectToggle', {
                       label: strings.ToggleConnect,
                       checked: this.onPropertyPaneFieldChanged.bind(this),
+                      onText: 'On',
+                      offText: 'Off'
                   })
               ]
             }

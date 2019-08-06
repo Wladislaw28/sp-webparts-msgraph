@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { IWebPartRenderCalenderProps } from './IWebPartRenderCalenderProps';
-import {Calendar, Event} from "@microsoft/microsoft-graph-types";
+import {Event} from "@microsoft/microsoft-graph-types";
 import { MSGraphClient } from '@microsoft/sp-http';
 import * as MicrosoftGraph from '@microsoft/microsoft-graph-types';
 import ViewEvents from './ViewEvents/ViewEvents';
@@ -23,13 +23,20 @@ export default class WebPartRenderCalender extends React.Component<IWebPartRende
 
    public componentWillReceiveProps(): void {
        this._checkConnect();
+       console.log(this.props);
    }
 
    private _checkConnect(): void {
-       if (this.props.connectToggle === false && this.props.idCalendar !== '') {
+       if (this.props.connectToggle === true && this.props.idCalendar !== '') {
            this._getEvents(this.props.idCalendar);
-       } else if (this.props.connectToggle === true) {
-           console.log("connect");
+       } else if (this.props.connectToggle === false && this.props.dataEventsFromOtherWP.length !== 0) {
+           this.setState({
+               eventsData: this.props.dataEventsFromOtherWP,
+           },() => {
+               this.render();
+           });
+       } else {
+           return;
        }
    }
 

@@ -95,14 +95,14 @@ export default class WebPartMsGraph extends React.Component<IWebPartMsGraphProps
                 this.setState({
                     arrayEvents
                 }, () => {
-                    Store.broadcast("123");
+                    Store.broadcast(this.state.arrayEvents);
                 });
             });
         });
     }
 
   public render(): React.ReactElement<IWebPartMsGraphProps> {
-        const {userName, userEmail, options, arrayEvents} = this.state;
+        const {userName, userEmail, options} = this.state;
 
       const dropdownStyles: Partial<IDropdownStyles> = {
           dropdown: { margin: 0 ,minWidth: 150, marginTop: 150 }};
